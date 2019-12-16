@@ -20,7 +20,6 @@ class Client {
     private Socket clientSocket;
     private PrintWriter out;
     private BufferedReader in;
-    private BufferedReader stdIn;
     private InetAddress inetAddress;
 
     //main method
