@@ -1,3 +1,4 @@
+//Server code
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +19,6 @@ class Server extends JFrame {
     private ServerSocket serverSocket;
     private Socket clientSocket;
     private BufferedReader input;
-    private BufferedReader stdIn;
     private PrintWriter output;
 
     //main method
@@ -76,7 +76,7 @@ class Server extends JFrame {
 
         }
         catch(IOException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
 
     }
